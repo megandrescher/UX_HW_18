@@ -50,8 +50,7 @@ h6 {
 }
 
 .headerTop {
-    width: auto;    
-    height:fit-content;
+    width: 100%;    
     background-color: #202665;
     /*display:grid;
     grid-template-columns: 1fr, 1fr, 1fr 1fr 1fr;
@@ -65,38 +64,32 @@ h6 {
     /*grid-area: topRowLogo;*/
     background-color: #202665;
     width: auto;
-    height: 117px;
+    height: 103px;
 }
 
-#headerBlank {
-    /*grid-area: topRowBlank;*/
-    background-color: #202665;
-    width: auto;
-    height: 117px;  
-}
 
 .reserveButton {
     /*grid-area: topRowButton;*/
-    background-color: #202665;
+    background-color: #C4E5DF;
     width: auto;
-    height: 117px;
+    height: 35px;
 }
 
-.container1 {
+/*.container1 {
     background-color: #C4E5DF; 
     width: 100%;
     height: 38px;
     display: inline-block;
-}
+}*/
 
-.navigationSocial{
+.navigationSocial {
     background-color: #C4E5DF;
     height: 38px;
     /*grid-area: socailRow2;*/
     
 }
 
-.navigationMain{
+.navigationMain {
     height: 38px;
     /*grid-area: navRow2;*/
     align-self: center;
@@ -110,6 +103,7 @@ h6 {
     width: auto;
     height: 38px;
 }
+
 .menuLink {
     background-color: #C4E5DF; 
     width: auto;
@@ -118,9 +112,9 @@ h6 {
 
 .eventLink {
     background-color: #C4E5DF; 
-    width: auto;
-    height: 38px;
+    white-space: nowrap;
 }
+
 
 .libraryLink {
     background-color: #C4E5DF; 
@@ -134,19 +128,15 @@ h6 {
     height: 38px;
 }
 
-.search{
+.search {
     height: 38px;
     /*grid-area: searchRow2;*/
     background-color: #C4E5DF;
 }
 
 #hero {
-    background-color: #C4E5DF;
-    height: 525px;
-
-    /*background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    display:flex;
+    object-fit: cover;
 }
 
 /* #heroVid {
@@ -168,8 +158,9 @@ h6 {
     width: 100%;  
 }
 
-.titleTutorials{
-    width: 100%;  
+.titleTutorials {
+    width: 100%; 
+    display:flex; 
     background-color: #C4E5DF;
     justify-content: center;   
 }
@@ -185,7 +176,7 @@ h6 {
 .forAll {
     width: 100%; 
     background-color: white;
-    
+    object-fit: cover;
 }
 
 .infoTiles {
@@ -212,8 +203,7 @@ align-content: center;
 .footer {
     background-color: #202665;
     width: 100%;
-    display: flex;
-    justify-content: inline-block;
+    display: inline-flex;
     justify-content: space-evenly;
     margin: auto;
     padding: 30px;
@@ -237,6 +227,7 @@ align-content: center;
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr, 1fr; 
+    vertical-align: middle;
     height: 315px;
     text-align: center;
 }
@@ -266,23 +257,25 @@ align-content: center;
 }
 
 .container {
-    display: inline-block;
+    display: inline;
 }
   
   /* Style the input elements and the submit button */
   input[type=text], input[type="image"] {
     width: 100%;
-    padding: 12px;
-    display: inline-block;
+    vertical-align: middle;
   }
   
   /* Style the submit button */
   input[type="image"] {
-    width: 60px;
     display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
   }
 
   input[type=text] {
-    display: inline-block;
+    width: 320px;
+    padding: 12px;
   }
   
